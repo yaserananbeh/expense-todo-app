@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todoComponentContainer {
+  background-color: #fbfbfb;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.todoComponentContainer .formContainer > h2 {
+  margin: auto;
+}
+.todoComponentContainer .formContainer {
+  width: 80%;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
+  padding: 15px;
+}
+.todoComponentContainer .formContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  min-height: 5em;
+  justify-content: space-evenly;
+}
+.todoComponentContainer .formContainer form button {
+  background-color: #0083ff;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 800;
+  border-radius: 3px;
+}
+.todoComponentContainer .formContainer > form > input {
+  padding: 4px;
+}
+
+.todoComponentContainer .todoListContainer {
+  width: 80%;
+  margin: 3em auto;
+  border: 1px solid;
+  padding: 15px;
+}
+.todoComponentContainer .todoListContainer > h2 {
+  text-align: center;
+}
+.oneTaskContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 800;
+  text-transform: capitalize;
+  border-bottom: 1px solid gray;
+  box-shadow: 0px 1px 3px #808080b3;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.oneTaskContainer .buttonsArea > button {
+  background-color: transparent;
+  border: none;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+}
+.oneTaskContainer .editPanel {
+  justify-self: unset;
+}
+.oneTaskContainer .editPanel button {
+  background-color: #0083ff;
+  border: none;
+  padding: 2px 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.buttonsAreaWithEdit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+#root > div > div > div > div.todoListContainer > ul > p{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .todoComponentContainer .formContainer {
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 0;
+  }
+  .todoComponentContainer .todoListContainer {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 15px;
+}
+.oneTaskContainer{
+    flex-direction: column;
+}
+.buttonsAreaWithEdit {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.oneTaskContainer .buttonsArea > button {
+    font-size: 20px;
+}
+.oneTaskContainer .editPanel {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+.todoComponentContainer .formContainer form {
+    width: 90%;
+}
+}

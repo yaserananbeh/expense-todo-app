@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.expenseWelcomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 204, 204);
+}
+.expenseWelcomePage .expenseWelcomePageContainer{
+    border-radius: 15px;
+    background-color: royalblue;
+    min-width: 30%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.expenseWelcomePage .expenseWelcomePageContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.expenseShowPage{
+    background-color: rgb(236, 250, 114);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.expenseShowPage .expenseShowPageContainer{
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: royalblue;
+    min-width: 30%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
