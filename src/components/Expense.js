@@ -50,10 +50,10 @@ function Expense() {
   };
   const handleDeleteExpense = (index) => {
     let newArr = [...allExpenses];
-    setTotalIncome(totalIncome - newArr[index].amountOfMoney);
+    setTotalIncome(totalIncome + newArr[index].amountOfMoney);
     localStorage.setItem(
       "totalIncome",
-      JSON.stringify(totalIncome - newArr[index].amountOfMoney)
+      JSON.stringify(totalIncome + newArr[index].amountOfMoney)
     );
 
     newArr.splice(index, 1);
